@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 {% load static %}
+{% load wagtailimages_tags %}
+{% load wagtailsvg_tags %}
 
 {% block body_class %}template-test-page{% endblock %}
 
@@ -16,6 +18,17 @@ Delete the line below if you're just getting started and want to remove the welc
 {% comment %}
 Delete the line below if you're just getting started and want to remove the welcome screen!
 {% endcomment %}
-{% include 'home/welcome_page.html' %}
+
+{% comment %} 
+SVG Concept Test
+{% endcomment %}
+{% image page.logo original as logo %}
+
+<img
+  src="{{ logo|svg_url }}"
+  width="{{ logo.width }}"
+  height="{{ logo.height }}"
+  alt="{{ logo.alt }}"
+/>
 
 {% endblock content %}

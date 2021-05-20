@@ -42,8 +42,6 @@ INSTALLED_APPS = [
 
     'modelcluster',
     'taggit',
-    'wagtail_react_streamfield',
-    'wagtailsvg',
 
     'django.contrib.admin',
     'django.contrib.auth',
@@ -155,6 +153,7 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
+MEDIA_SVG_URL = "svgs/"
 
 # Wagtail settings
 
