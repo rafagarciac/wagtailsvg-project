@@ -42,6 +42,7 @@ INSTALLED_APPS = [
 
     'modelcluster',
     'taggit',
+    'wagtail_react_streamfield',
     'wagtailsvg',
 
     'django.contrib.admin',
